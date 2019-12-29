@@ -1,0 +1,30 @@
+{
+  "name": "twitch-vod-downloader",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Jarvis Prestidge <jarvisprestidge@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "yarn clean && tsc -p .",
+    "format": "prettier --write '**/*.ts'",
+    "lint": "tslint -p tsconfig.json -c tslint.json",
+    "start": "node dist/index.js",
+    "version": "auto-changelog -p && git add CHANGELOG.md",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "test:e2e": "jest --config ./test/jest-e2e.json"
+  },
+  "devDependencies": {
+    "@types/node": "^13.1.1",
+    "auto-changelog": "^1.16.2",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.0",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.1.0",
+    "typescript": "^3.7.4"
+  }
+}

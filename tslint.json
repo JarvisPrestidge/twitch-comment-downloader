@@ -1,0 +1,27 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended",
+        "tslint-plugin-prettier",
+        "tslint-config-prettier"
+    ],
+    "rules": {
+        "radix": false,
+        "forin": false,
+        "no-console": false,
+        "array-type": false,
+        "interface-name": false,
+        "no-var-requires": false,
+        "member-ordering": false,
+        "ordered-imports": false,
+        "no-empty-interface": false,
+        "no-floating-promises": true,
+        "object-literal-sort-keys": false,
+        "prefer-const": [
+            true,
+            {
+                "destructuring": "all"
+            }
+        ]
+    }
+}

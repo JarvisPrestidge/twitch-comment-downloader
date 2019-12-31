@@ -13,6 +13,6 @@
         "strictPropertyInitialization": false
     },
     "include": [
-        "src", "example/example.ts"
+        "src", "examples/example.ts"
     ]
 }

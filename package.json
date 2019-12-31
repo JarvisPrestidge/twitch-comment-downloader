@@ -1,6 +1,6 @@
 {
     "name": "twitch-vod-downloader",
-    "version": "2.0.0",
+    "version": "1.0.0",
     "main": "index.js",
     "author": "Jarvis Prestidge <jarvisprestidge@gmail.com>",
     "license": "MIT",

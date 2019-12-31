@@ -4,6 +4,28 @@
     "main": "index.js",
     "author": "Jarvis Prestidge <jarvisprestidge@gmail.com>",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/jarvisprestidge/twitch-comment-downloader.git"
+    },
+    "bugs": {
+        "url": "https://github.com/jarvisprestidge/twitch-comment-downloader/issues"
+    },
+    "keywords": [
+        "twitch",
+        "stream",
+        "video",
+        "vod",
+        "comment",
+        "downloader"
+    ],
+    "files": [
+        "dist",
+        "package.json",
+        "yarn.lock",
+        "README.md",
+        "LICENSE"
+    ],
     "scripts": {
         "clean": "rimraf dist",
         "build": "yarn clean && tsc -p .",

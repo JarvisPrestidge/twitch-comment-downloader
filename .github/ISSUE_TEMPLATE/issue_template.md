@@ -1,23 +1,24 @@
-_(Thanks for reporting an issue to twitch-comment-downloader! If you haven't already read the [contributor guidelines](contributing.md), Please do that now, then procede to fill out the details below.)_
+## Expected Behavior
 
-## What are the minimum necessary steps to reproduce this issue?
 
-1. …
-2. …
-3. …
+## Actual Behavior
 
-## What happens?
 
-…
+## Steps to Reproduce the Problem
 
-## What were you expecting to happen?
+  1.
+  1.
+  1.
 
-…
+## Specifications
+
+  - Version:
+  - Platform:
+  - Subsystem:
+
+## Any other details
+
 
 ## Please paste any error or log messages here
 
 (if long, you can [link to a gist](https://gist.github.com/))
-
-## Any other details
-
-…

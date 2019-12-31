@@ -9,7 +9,7 @@
   </a>
 </p>
 
->**Fetch comments for a given twitch vod**
+Fetch comments for a given twitch vod
 
 
 * 🎉 First class Typescript support
@@ -121,8 +121,6 @@ yarn test
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/jarvisprestidge/twitch-comment-downloader/issues). You can also take a look at the [contributing guide](./CONTRIBUTING.md).
 
----
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
 
 ## Show your support
 
@@ -131,3 +129,6 @@ Give a ⭐️ if this project helped you!
 <a href="https://www.patreon.com/jarvisprestidge">
   <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
 </a>
+
+---
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

@@ -1,6 +1,6 @@
 {
     "name": "twitch-comment-downloader",
-    "version": "1.2.3",
+    "version": "1.2.4",
     "main": "index.js",
     "author": "Jarvis Prestidge <jarvisprestidge@gmail.com>",
     "license": "MIT",

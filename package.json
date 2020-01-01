@@ -32,8 +32,8 @@
         "format": "prettier --write '**/*.ts'",
         "lint": "tslint -p tsconfig.json -c tslint.json",
         "version": "auto-changelog -p && git add CHANGELOG.md",
-        "example:js": "node example/javascript/index.js",
-        "example:ts": "ts-node example/typescript/index.ts",
+        "example:js": "node examples/javascript/index.js",
+        "example:ts": "ts-node examples/typescript/index.ts",
         "prepublishOnly": "yarn build"
     },
     "devDependencies": {

@@ -1,44 +1,39 @@
 # Twitch Comment Downloader
 
-
 <p>
   <img alt="Version" src="https://img.shields.io/npm/v/twitch-comment-downloader?style=for-the-badge" />
   
-  <img alt="Version" src="https://img.shields.io/bundlephobia/minzip/twitch-comment-downloader?style=for-the-badge" />
+  <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" />
 
-  <img alt="Version" src="https://img.shields.io/github/issues/jarvisprestidge/twitch-comment-downloader?style=for-the-badge" />
+  <img alt="Open Issues" src="https://img.shields.io/github/issues/jarvisprestidge/twitch-comment-downloader?style=for-the-badge" />
   
-  <a href="#" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" />
-  </a>
+  <img alt="Size" src="https://img.shields.io/bundlephobia/minzip/twitch-comment-downloader?style=for-the-badge" />
+
 </p>
 
 Fetch comments for a given twitch vod
 
-
-* 🎉 First class Typescript support
-* 🚅 Faster than similar libraries
-* 🌈 Returns the full unopinionated result
-* 1️⃣ Single dependency
-* 👌 Simple API
-
+-   🎉 First class Typescript support
+-   🚅 Faster than similar libraries
+-   🌈 Returns the full unopinionated result
+-   1️⃣ Single dependency
+-   👌 Simple API
 
 ## Table of Contents
 
-- [Install](#install)
-- [Usage](#usage)
-- [Example](#example)
-- [Run Tests](#run-tests)
-- [Author](#author) 
-- [Contributing](#contributing)
-- [Support](#show-your-support)
+-   [Install](#install)
+-   [Usage](#usage)
+-   [Example](#example)
+-   [Run Tests](#run-tests)
+-   [Author](#author)
+-   [Contributing](#contributing)
+-   [Support](#show-your-support)
 
 ## Install
 
 ```bash
 yarn add twitch-comment-downloader
 ```
-
 
 ```bash
 npm install twitch-comment-downloader
@@ -50,13 +45,12 @@ There are example implementations for both [javascript](./examples/javascript/in
 
 ```typescript
 import { TwitchCommentDownloader } from "../../src/index";
-import { ITwitchComment } from "../../src/interfaces/twitch/comment";
 
 const vodId = "524487996";
 
 const clientId = "kimne78kx3ncx6brgo4mv6wki5h1ko";
 
-const main = async (): Promise<ITwitchComment[]> => {
+const main = async (): Promise<void> => {
 
     // Instantiate twitch comment downloader
     const twitchCommentDownloader = new TwitchCommentDownloader(clientId);
@@ -71,12 +65,10 @@ const main = async (): Promise<ITwitchComment[]> => {
         console.log(`[${timestamp}] @${commenter} - ${message}`);
     }
 
-    return comments;
+    console.log(`Done fetching ${comments.length} comments from vod id: ${vodId}`);
 };
 
-main()
-    .then((comments) => console.log(`Done fetching ${comments.length} comments from vod id: ${vodId}`))
-    .catch((err) => { throw err });
+main().catch((err) => console.error(err));
 
 ```
 
@@ -115,10 +107,10 @@ yarn test
 
 👤 **Jarvis Prestidge <jarvisprestidge@gmail.com>**
 
-* Site: https://jarvisprestidge.io
-* Twitter: [@jarvisprestidge](https://twitter.com/jarvisprestidge)
-* Github: [@jarvisprestidge](https://github.com/jarvisprestidge)
-* LinkedIn: [@jarvisprestidge](https://linkedin.com/in/jarvisprestidge)
+-   Site: https://jarvisprestidge.io
+-   Twitter: [@jarvisprestidge](https://twitter.com/jarvisprestidge)
+-   Github: [@jarvisprestidge](https://github.com/jarvisprestidge)
+-   LinkedIn: [@jarvisprestidge](https://linkedin.com/in/jarvisprestidge)
 
 <p>
   <a href="https://twitter.com/jarvisprestidge" target="_blank">
@@ -130,7 +122,6 @@ yarn test
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/jarvisprestidge/twitch-comment-downloader/issues). You can also take a look at the [contributing guide](./CONTRIBUTING.md).
 
-
 ## Show your support
 
 Give a ⭐️ if this project helped you!
@@ -140,4 +131,5 @@ Give a ⭐️ if this project helped you!
 </a>
 
 ---
+
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

@@ -19,9 +19,7 @@ const main = async () => {
         console.log(`[${timestamp}] @${commenter} - ${message}`);
     }
 
-    return comments;
+    console.log(`Done fetching ${comments.length} comments from vod id: ${vodId}`);
 };
 
-main()
-    .then((comments) => console.log(`Done fetching ${comments.length} comments from vod id: ${vodId}`))
-    .catch((err) => { throw err });
+main().catch((err) => console.error(err));

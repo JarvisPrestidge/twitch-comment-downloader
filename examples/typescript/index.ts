@@ -1,11 +1,10 @@
 import { TwitchCommentDownloader } from "../../src/index";
-import { ITwitchComment } from "../../src/interfaces/twitch/comment";
 
 const vodId = "524487996";
 
 const clientId = "kimne78kx3ncx6brgo4mv6wki5h1ko";
 
-const main = async (): Promise<ITwitchComment[]> => {
+const main = async (): Promise<void> => {
 
     // Instantiate twitch comment downloader
     const twitchCommentDownloader = new TwitchCommentDownloader(clientId);
@@ -20,9 +19,7 @@ const main = async (): Promise<ITwitchComment[]> => {
         console.log(`[${timestamp}] @${commenter} - ${message}`);
     }
 
-    return comments;
+    console.log(`Done fetching ${comments.length} comments from vod id: ${vodId}`);
 };
 
-main()
-    .then((comments) => console.log(`Done fetching ${comments.length} comments from vod id: ${vodId}`))
-    .catch((err) => { throw err });
+main().catch((err) => console.error(err));
